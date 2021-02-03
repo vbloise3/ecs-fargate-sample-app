@@ -4,7 +4,7 @@ from fabric import Connection, task
 
 SSH_KEY = ""
 
-# this function only gets ec2 on public subnets
+# this function only gets ec2 on public subnets 
 def _get_ec2_instances():
     instances = []
     connection = connect_to_region(
